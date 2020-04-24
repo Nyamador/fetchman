@@ -1,0 +1,43 @@
+body{
+    background-color: #2d2c2c;
+}
+
+.header{
+    background-color: #272727;
+    box-shadow: 1px 2px 2px 1px #292929;
+}
+
+.text-wrapper{
+    background: #484848;
+    border: 1px solid #484848;
+    border-radius: 4px;
+}
+
+.form-control{
+    background: #484848;
+    border: 1px solid #484848;
+    color: white;
+    border-radius: 0;
+}
+
+.form-control:focus{
+    border: none;
+    background-color: #3e3d3d;
+    border-radius: none;
+}
+
+.trigger{
+    cursor: pointer;
+}
+
+.modal{
+    color: black;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.show-modal{
+    background: #000000b3;
+}

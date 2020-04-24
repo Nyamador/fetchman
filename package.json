@@ -1,0 +1,21 @@
+{
+  "name": "fetchman",
+  "version": "1.0.0",
+  "description": "A Simple GUI For Testing API's",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack  --mode development"
+  },
+  "author": "Desmond Nyamador",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FetchMan | A Simple Browser Based API Testing Tool</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="p-12 header text-center">
+            <div><h2>FetchMan</h2></div>
+    </header>
+
+    <main>
+            <div class="col-8-12 m-auto">
+                    <section>
+                        <div class="m-10 text-wrapper col-12-12 flex-row">
+                            <div class="col-3-12 flex-row al-ctr js-ctr trigger">
+                                    <p id="method" class="strong p-8">GET</p>
+                                    <img src="public/svg/chevron-small-down.svg" height="10px" width="10px">
+                            </div>
+
+                            <input type="text" name="username" id="text" placeholder="Username" class="form-control col-9-12">
+                        </div>
+                    </section>
+            </div>
+    </main>
+
+    <div class="modal"> 
+        <div class="modal-content">
+            <span class="close-button">×</span>
+
+            <div class="m-4">
+                <h5 class="strong p-8 pointer">GET</h5>
+                <h5 class="strong p-8 pointer">POST</h5>
+                <h5 class="strong p-8 pointer">PUT</h5>
+                <h5 class="strong p-8 pointer">PATCH</h5>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script>
+        var modal = document.querySelector(".modal");
+var trigger = document.querySelector(".trigger");
+var closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+    </script>
+</body>
+</html>
